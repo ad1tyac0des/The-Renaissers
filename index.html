@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="notranslate" translate="no">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,48 @@
   <link rel="icon" type="image/x-icon" href="assets/images/fav.png">
   <link rel="stylesheet" href="css/font.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
+
 <body>
   <!-- Preloader Section -->
-  <section id="preloader-section" class="w-full h-dvh bg-zinc-500">
-    
+  <section id="preloader-section"
+    class="relative w-full h-dvh bg-ren-black text-ren-white uppercase flex flex-col items-center">
+    <div class="flex flex-col items-center text-center mt-52 lg:mt-36">
+      <!-- The Renaissers -->
+      <div class="flex flex-col items-center">
+        <h1 class="font-[neue] font-normal text-5xl md:text-7xl leading-[0.8]">The</h1>
+        <h1 class="font-[neue] font-normal text-5xl md:text-7xl leading-[0.8] gridular-spans">
+          <span>R</span>e<span>n</span>ai<span>sse</span>r<span>s</span></h1>
+      </div>
+
+      <!-- Revive / Reborn / Reinvent -->
+      <div class="flex items-center gap-1 font-mono font-light text-sm lg:text-lg">
+        <h4>Revive</h4>
+        <h4 class="font-[gridular]">/</h4>
+        <h4>Reborn</h4>
+        <h4 class="font-[gridular]">/</h4>
+        <h4>Reinvent</h4>
+      </div>
+    </div>
+
+    <!-- Preloader Bar -->
+    <div class="relative flex items-center justify-between w-[90%] px-3 py-3 mt-10 lg:mt-16 rounded-sm overflow-hidden">
+      <div id="preloader-bar-filler" class="w-[100%] h-full bg-[#333] absolute top-0 left-0"></div>
+      <h5 class="font-mono font-normal z-10 text-sm">Reviving</h5>
+      <h5 class="font-mono font-normal z-10 text-sm"><span>100</span><span class="font-[gridular] px-0.5">/</span>100
+      </h5>
+    </div>
+
+    <!-- Revive the web Btn-->
+    <div class="absolute bottom-7">
+      <button class="gridular-spans font-mono font-normal uppercase text-sm"><span class="px-0.5">[</span>Revive the
+        web<span class="px-0.5">]</span></button>
+    </div>
+
   </section>
-  
+
   <script type="module" src="js/main.js"></script>
 </body>
+
 </html>
