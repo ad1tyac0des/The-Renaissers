@@ -6,7 +6,13 @@ export default {
     "./css/**/*.css"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'ren-black': '#191919',
+        'ren-white': '#F5F3EF',
+        'ren-orange': '#FF6B00',
+      }
+    },
   },
   plugins: [],
 }
