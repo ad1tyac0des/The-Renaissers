@@ -7,3 +7,8 @@
         @apply font-[gridular];
     }
 }
+
+input, textarea {
+    outline: none;
+    border: none;
+}
