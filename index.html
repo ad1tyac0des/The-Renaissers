@@ -16,180 +16,175 @@
 <body>
   <!-- Preloader Section -->
   <section id="preloader-section"
-    class="relative w-full h-dvh bg-ren-black text-ren-white uppercase hidden flex-col items-center">
+    class="relative w-full h-dvh bg-ren-black text-ren-white uppercase flex flex-col items-center">
     <div class="flex flex-col items-center text-center mt-52 lg:mt-36">
       <!-- The Renaissers -->
       <div class="flex flex-col items-center">
-        <h1 class="font-[neue] font-normal text-5xl md:text-7xl leading-[0.8]">The</h1>
-        <h1 class="font-[neue] font-normal text-5xl md:text-7xl leading-[0.8] gridular-spans">
+        <h1 class="preloader-headings font-[neue] font-normal text-5xl md:text-7xl leading-[0.8]">The</h1>
+        <h1 class="preloader-headings font-[neue] font-normal text-5xl md:text-7xl leading-[0.8] gridular-spans">
           <span>R</span>e<span>n</span>ai<span>sse</span>r<span>s</span></h1>
       </div>
 
       <!-- Revive / Reborn / Reinvent -->
       <div class="flex items-center gap-1 font-mono font-light text-sm lg:text-lg">
-        <h4>Revive</h4>
-        <h4 class="font-[gridular]">/</h4>
-        <h4>Reborn</h4>
-        <h4 class="font-[gridular]">/</h4>
-        <h4>Reinvent</h4>
+        <h4 class="preloader-subheading">Revive</h4>
+        <h4 class="preloader-subheading-divider font-[gridular]">/</h4>
+        <h4 class="preloader-subheading">Reborn</h4>
+        <h4 class="preloader-subheading-divider font-[gridular]">/</h4>
+        <h4 class="preloader-subheading">Reinvent</h4>
       </div>
     </div>
 
     <!-- Preloader Bar -->
     <div class="relative flex items-center justify-between w-[90%] px-3 py-3 mt-10 lg:mt-16 rounded-sm overflow-hidden">
-      <div id="preloader-bar-filler" class="w-[100%] h-full bg-[#333] absolute top-0 left-0"></div>
-      <h5 class="font-mono font-normal z-10 text-sm">Reviving</h5>
-      <h5 class="font-mono font-normal z-10 text-sm"><span>100</span><span class="font-[gridular] px-0.5">/</span>100
+      <div id="preloader-bar-filler" class="w-0 h-full bg-[#333] absolute top-0 left-0"></div>
+      <h5 class="preloader-bar-text font-mono font-normal z-10 text-sm">Reviving</h5>
+      <h5 class="preloader-bar-text font-mono font-normal z-10 text-sm"><span id="preloader-bar-text-number">0</span><span class="font-[gridular] px-0.5">/</span>100
       </h5>
     </div>
-
-    <!-- Revive the web Btn-->
-    <div class="absolute bottom-7">
-      <button class="gridular-spans font-mono font-normal uppercase text-sm"><span class="px-0.5">[</span>Revive the
-        web<span class="px-0.5">]</span></button>
-    </div>
-
   </section>
 
-  <section id="hero-section" class="bg-ren-black text-ren-white w-full">
-    <nav class="flex items-center justify-between px-4 md:px-8 py-5 md:py-7">
-      <h1 class="font-[neue] font-normal text-base md:text-xl gridular-spans uppercase cursor-pointer">
-        <span>R</span>e<span>n</span>ai<span>sse</span>r<span>s</span></h1>
-
-      <div class="cursor-pointer">
-        <div class="font-[mono] font-normal text-base md:text-lg gridular-spans uppercase"><span
-            class="px-0.5">[</span>Menu<span class="px-0.5">]</span></div>
-      </div>
-    </nav>
-
-    <!-- hero section content -->
-    <div class="flex flex-col sm:flex-row justify-between gap-3 md:gap-10 px-4 md:px-8 py-4 md:py-6">
-      <div
-        class="font-[neue] text-[3.5rem] sm:text-[3.3rem] md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl leading-[1] uppercase gridular-spans">
-        <h1>W<span>e</span></h1>
-        <h1 class="pl-9 md:pl-16"><span>R</span>e<span>f</span>i<span>n</span>e</h1>
-        <h1>F<span>la</span>w<span>s</span></h1>
-        <h1 class="pl-40 xl:pl-[17rem]">Into</h1>
-        <h1 class="pl-9 md:pl-16"><span>F</span>l<span>a</span>w<span>l</span>e<span>ss</span></h1>
-        <h1><span>D</span>S<span>!G</span>N.</h1>
-      </div>
-
-      <div class="flex flex-col gap-3 items-end">
-        <div class="w-full sm:w-[15rem] md:w-[18rem] lg:w-[28rem] xl:w-[30rem] 2xl:w-[34rem] h-auto aspect-[9/9] md:flex-1">
-          <img class="size-full object-cover" src="assets/images/hero1.webp">
+  <main class="opacity-0 hidden">
+    <section id="hero-section" class="bg-ren-black text-ren-white w-full">
+      <nav class="flex items-center justify-between px-4 md:px-8 py-5 md:py-7">
+        <h1 class="font-[neue] font-normal text-base md:text-xl gridular-spans uppercase cursor-pointer">
+          <span>R</span>e<span>n</span>ai<span>sse</span>r<span>s</span></h1>
+  
+        <div class="cursor-pointer">
+          <div class="font-[mono] font-normal text-base md:text-lg gridular-spans uppercase"><span
+              class="px-0.5">[</span>Menu<span class="px-0.5">]</span></div>
         </div>
-
-        <p class="uppercase font-mono font-normal text-xs md:text-sm w-[85%] sm:w-[70%] text-right leading-[1.2]">
-          Redesigning broken digital experiences to make them faster, cleaner, human.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="about-section"
-    class="bg-ren-black text-ren-white w-full flex flex-col-reverse sm:flex-row gap-10 px-4 md:px-8 py-10 md:py-14">
-    <!-- about img -->
-    <div class="w-full sm:w-1/2">
-      <div class=" md:w-[22rem] lg:w-[26rem] aspect-[9/12]">
-        <img class="size-full object-cover" src="assets/images/about.webp" alt="">
-      </div>
-    </div>
-
-    <div class="w-full sm:w-1/2 flex flex-col justify-between">
-      <!-- about content -->
-      <div class="flex flex-col gap-4">
-        <h1 class="font-[neue] text-6xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl uppercase gridular-spans leading-[0.8]">A<span>b</span>o<span>u</span>t
-          <span>Us</span></h1>
-
-        <div class="font-[neue] font-normal text-lg leading-[1.25] sm:text-sm lg:text-base 2xl:text-lg w-[70%] lg:w-1/2 mt-2">
-          <p><span class="text-ren-orange">Renaissers</span> — a word born from Renaissance, meaning rebirth.</p>
-          <p>A new gen of creators, rebuilding the web with vision, depth, and intent.</p>
+      </nav>
+  
+      <!-- hero section content -->
+      <div class="flex flex-col sm:flex-row justify-between gap-3 md:gap-10 px-4 md:px-8 py-4 md:py-6">
+        <div
+          class="font-[neue] text-[3.5rem] sm:text-[3.3rem] md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl leading-[1] uppercase gridular-spans">
+          <h1 class="hero-headings ">W<span>e</span></h1>
+          <h1 class="hero-headings pl-9 md:pl-16"><span>R</span>e<span>f</span>i<span>n</span>e</h1>
+          <h1 class="hero-headings ">F<span>la</span>w<span>s</span></h1>
+          <h1 class="hero-headings pl-40 xl:pl-[17rem]">Into</h1>
+          <h1 class="hero-headings pl-9 md:pl-16"><span>F</span>l<span>a</span>w<span>l</span>e<span>ss</span></h1>
+          <h1 class="hero-headings "><span>D</span>S<span>!G</span>N.</h1>
         </div>
-
-        <div class="font-[neue] font-normal text-lg leading-[1.25] sm:text-sm lg:text-base 2xl:text-lg w-[85%] lg:w-[70%]">
-          <p>The Renaissers exist to reimagine, rebuild, and revive what the world has given up on.</p>
-          <p> We blend bold design with sharp vision to create interfaces that are intuitive, fast, and unforgettable.
+  
+        <div class="flex flex-col gap-3 items-end">
+          <div class="w-full sm:w-[15rem] md:w-[18rem] lg:w-[28rem] xl:w-[30rem] 2xl:w-[34rem] h-auto aspect-[9/9] md:flex-1">
+            <img class="size-full object-cover" src="assets/images/hero1.webp">
+          </div>
+  
+          <p class="uppercase font-mono font-normal text-xs md:text-sm w-[85%] sm:w-[70%] text-right leading-[1.2]">
+            Redesigning broken digital experiences to make them faster, cleaner, human.
           </p>
-          <p >Because when design just feels right — users don’t just notice.</p>
-          <p class="underline">They remember. They return.</p>
         </div>
       </div>
-
-      <button class="font-neue font-normal flex items-center gap-3 mt-7 sm:mt-1 w-fit">
-        <div class="pb-0.5 font-mono font-normal uppercase text-sm">More about us</div>
-        <div class="px-2 border rounded-sm"><i class="ri-arrow-right-s-line"></i></div>
-      </button>
-    </div>
-  </section>
-
-  <section id="process-section" class="bg-ren-black text-ren-white w-full px-4 md:px-8 py-8 md:py-10 flex flex-col gap-10">
-    <h1 class="font-[neue] text-6xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl uppercase gridular-spans leading-[0.8]">O<span>UR</span> P<span>r</span>o<span>c</span>e<span>s</span>s</h1>
-
-    <p class="font-[neue] font-normal text-lg leading-[1.25] sm:text-sm lg:text-base 2xl:text-lg w-[90%] md:w-1/2">Not every website needs a redesign. But the broken ones<span class="font-[mono]">?</span> They deserve a <span class="text-ren-orange">revival.</span> Our process is clear! we diagnose the pain, <span class="text-ren-orange">rethink</span> the experience, and <span class="text-ren-orange">rebuild</span> with purpose. From messy layouts to confusing navigation, we fix what’s broken and bring back clarity, style, and seamless performance.</p>
-
-    <!-- IRCTC REVIVED -->
-    <div class="flex flex-col gap-3 md:gap-5 mt-10 md:mt-16">
-      <h2 class="font-[neue] font-normal text-xl md:text-2xl xl:text-3xl uppercase mb-1 md:mb-2">IRCTC REVIVED</h2>
-      <img class="w-full aspect-[16/9] rounded-sm" src="assets/images/irctc.png">
-
-      <p class="font-[neue] font-normal text-[1.18rem] md:text-2xl leading-[1.1] md:leading-[1.1] w-full md:w-[65%] lg:w-1/2"><span class="text-ren-orange">Redesigned</span> the chaotic IRCTC homepage into a sleek and breathable experience, replacing the cluttered navbar and overloaded ticket booking section with a clean, minimal layout. <span class="hidden lg:inline">Now, users are greeted with a calm, <span class="text-ren-orange">organized</span> interface that makes booking feel effortless rather than overwhelming.</span></p>
-    </div>
-
-    <!-- SKETCHAI REVIVED -->
-    <div class="flex flex-col gap-3 md:gap-5 mt-10 md:mt-16">
-      <h2 class="font-[neue] font-normal text-xl md:text-2xl xl:text-3xl uppercase mb-1 md:mb-2">SKETCHAI REVIVED</h2>
-      <img class="w-full aspect-[16/11] rounded-sm" src="assets/images/sketchai.png">
-
-      <div class="flex justify-between items-end flex-col md:flex-row gap-5 md:gap-0">
-        <p class="font-[neue] font-normal text-[1.18rem] md:text-2xl leading-[1.1] md:leading-[1.1] w-full md:w-[65%] lg:w-1/2"><span class="text-ren-orange">Transformed</span> the complex world of AI image generation into an approachable, clean interface that welcomes casual creators. By stripping away technical complexity, we created a <span class="text-ren-orange">focused</span> experience where users can simply upload their sketches and bring them to life. <span class="hidden lg:inline">The minimalist design puts creativity first, making AI art generation feel as natural as picking up a pencil.</span></p>
-
+    </section>
+  
+    <section id="about-section"
+      class="bg-ren-black text-ren-white w-full flex flex-col-reverse sm:flex-row gap-10 px-4 md:px-8 py-10 md:py-14">
+      <!-- about img -->
+      <div class="w-full sm:w-1/2">
+        <div class=" md:w-[22rem] lg:w-[26rem] aspect-[9/12]">
+          <img class="size-full object-cover" src="assets/images/about.webp" alt="">
+        </div>
+      </div>
+  
+      <div class="w-full sm:w-1/2 flex flex-col justify-between">
+        <!-- about content -->
+        <div class="flex flex-col gap-4">
+          <h1 class="font-[neue] text-6xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl uppercase gridular-spans leading-[0.8]">A<span>b</span>o<span>u</span>t
+            <span>Us</span></h1>
+  
+          <div class="font-[neue] font-normal text-lg leading-[1.25] sm:text-sm lg:text-base 2xl:text-lg w-[70%] lg:w-1/2 mt-2">
+            <p><span class="text-ren-orange">Renaissers</span> — a word born from Renaissance, meaning rebirth.</p>
+            <p>A new gen of creators, rebuilding the web with vision, depth, and intent.</p>
+          </div>
+  
+          <div class="font-[neue] font-normal text-lg leading-[1.25] sm:text-sm lg:text-base 2xl:text-lg w-[85%] lg:w-[70%]">
+            <p>The Renaissers exist to reimagine, rebuild, and revive what the world has given up on.</p>
+            <p> We blend bold design with sharp vision to create interfaces that are intuitive, fast, and unforgettable.
+            </p>
+            <p >Because when design just feels right — users don’t just notice.</p>
+            <p class="underline">They remember. They return.</p>
+          </div>
+        </div>
+  
         <button class="font-neue font-normal flex items-center gap-3 mt-7 sm:mt-1 w-fit">
-          <div class="pb-0.5 font-mono font-normal uppercase text-sm">View all Revivals</div>
-          <div class="px-2 bg-ren-orange rounded-sm"><i class="ri-arrow-right-s-line"></i></div>
+          <div class="pb-0.5 font-mono font-normal uppercase text-sm">More about us</div>
+          <div class="px-2 border rounded-sm"><i class="ri-arrow-right-s-line"></i></div>
         </button>
       </div>
-    </div>
-  </section>
-
-  <section id="nominate-section" class="bg-ren-black text-ren-white w-full px-4 md:px-8 py-12 md:py-14 flex gap-10 justify-between flex-col sm:flex-row">
-    <div class="w-[60%] 2xl:w-[50%] min-[1760px]:w-[40%]">
-      <h1 class="font-[neue] text-6xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl uppercase gridular-spans leading-[0.8]">
-        N<span>om</span>i<span>nat</span>e a <span>S</span>i<span>t</span>e</h1>
-      
-      <button class="font-neue font-normal flex items-center gap-3 mt-7 sm:mt-10 w-fit">
-        <div class="pb-0.5 font-mono font-normal uppercase text-sm">Let's go</div>
-        <div class="px-2 bg-ren-orange rounded-sm"><i class="ri-arrow-right-up-line"></i></div>
-      </button>
-    </div>
-
-    <div class="w-full sm:w-[40%]">
-      <img class="size-full" src="assets/images/nominate.png">
-    </div>
-  </section>
-
-  <section id="contact-section" class="bg-ren-black text-ren-white w-full px-4 md:px-8 py-6 md:py-10">
-    <div class="w-full flex justify-end">
-      <h3 class="font-[neue] text-right text-xl md:text-2xl lg:text-3xl xl:text-4xl uppercase gridular-spans">or Want a private <br>Project<span>?</span></h3>
-    </div>
-
-    <div class="w-full flex justify-end sm:justify-between">
-      <p class="hidden sm:block w-[35%] mt-2 uppercase font-mono font-normal text-xs md:text-sm leading-[1.2]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Got a broken website or a bold idea? We might already have the fix — and if not, we’ll build one for you. Let’s connect.</p>
-
-      <h1 class="font-[neue] text-5xl md:text-6xl lg:text-7xl xl:text-8xl uppercase gridular-spans leading-[0.8]">C<span>O</span>n<span>ta</span>ct
-        <span>Us</span></h1>
-    </div>
-
-    <div class="flex flex-col gap-5 mt-10">
-      <div class="w-full flex justify-between gap-5">
-        <input class="w-1/2 py-4 px-3 font-[mono] uppercase bg-[#262626] rounded-sm border border-ren-white" type="text" placeholder="Name">
-        <input class="w-1/2 py-4 px-3 font-[mono] uppercase bg-[#262626] rounded-sm border border-ren-white" type="email" placeholder="Email">
+    </section>
+  
+    <section id="process-section" class="bg-ren-black text-ren-white w-full px-4 md:px-8 py-8 md:py-10 flex flex-col gap-10">
+      <h1 class="font-[neue] text-6xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl uppercase gridular-spans leading-[0.8]">O<span>UR</span> P<span>r</span>o<span>c</span>e<span>s</span>s</h1>
+  
+      <p class="font-[neue] font-normal text-lg leading-[1.25] sm:text-sm lg:text-base 2xl:text-lg w-[90%] md:w-1/2">Not every website needs a redesign. But the broken ones<span class="font-[mono]">?</span> They deserve a <span class="text-ren-orange">revival.</span> Our process is clear! we diagnose the pain, <span class="text-ren-orange">rethink</span> the experience, and <span class="text-ren-orange">rebuild</span> with purpose. From messy layouts to confusing navigation, we fix what’s broken and bring back clarity, style, and seamless performance.</p>
+  
+      <!-- IRCTC REVIVED -->
+      <div class="flex flex-col gap-3 md:gap-5 mt-10 md:mt-16">
+        <h2 class="font-[neue] font-normal text-xl md:text-2xl xl:text-3xl uppercase mb-1 md:mb-2">IRCTC REVIVED</h2>
+        <img class="w-full aspect-[16/9] rounded-sm" src="assets/images/irctc.png">
+  
+        <p class="font-[neue] font-normal text-[1.18rem] md:text-2xl leading-[1.1] md:leading-[1.1] w-full md:w-[65%] lg:w-1/2"><span class="text-ren-orange">Redesigned</span> the chaotic IRCTC homepage into a sleek and breathable experience, replacing the cluttered navbar and overloaded ticket booking section with a clean, minimal layout. <span class="hidden lg:inline">Now, users are greeted with a calm, <span class="text-ren-orange">organized</span> interface that makes booking feel effortless rather than overwhelming.</span></p>
       </div>
-      <textarea class="w-full h-[18rem] py-4 px-3 font-[mono] uppercase bg-[#262626] rounded-sm border border-ren-white" id="message" placeholder="Message Us"></textarea>
-      <button class="w-full py-4 bg-ren-orange rounded-sm uppercase font-[mono] font-normal text-sm">
-        Let’s Talk
-      </button>
-    </div>
-  </section>
+  
+      <!-- SKETCHAI REVIVED -->
+      <div class="flex flex-col gap-3 md:gap-5 mt-10 md:mt-16">
+        <h2 class="font-[neue] font-normal text-xl md:text-2xl xl:text-3xl uppercase mb-1 md:mb-2">SKETCHAI REVIVED</h2>
+        <img class="w-full aspect-[16/11] rounded-sm" src="assets/images/sketchai.png">
+  
+        <div class="flex justify-between items-end flex-col md:flex-row gap-5 md:gap-0">
+          <p class="font-[neue] font-normal text-[1.18rem] md:text-2xl leading-[1.1] md:leading-[1.1] w-full md:w-[65%] lg:w-1/2"><span class="text-ren-orange">Transformed</span> the complex world of AI image generation into an approachable, clean interface that welcomes casual creators. By stripping away technical complexity, we created a <span class="text-ren-orange">focused</span> experience where users can simply upload their sketches and bring them to life. <span class="hidden lg:inline">The minimalist design puts creativity first, making AI art generation feel as natural as picking up a pencil.</span></p>
+  
+          <button class="font-neue font-normal flex items-center gap-3 mt-7 sm:mt-1 w-fit">
+            <div class="pb-0.5 font-mono font-normal uppercase text-sm">View all Revivals</div>
+            <div class="px-2 bg-ren-orange rounded-sm"><i class="ri-arrow-right-s-line"></i></div>
+          </button>
+        </div>
+      </div>
+    </section>
+  
+    <section id="nominate-section" class="bg-ren-black text-ren-white w-full px-4 md:px-8 py-12 md:py-14 flex gap-10 justify-between flex-col sm:flex-row">
+      <div class="w-[60%] 2xl:w-[50%] min-[1760px]:w-[40%]">
+        <h1 class="font-[neue] text-6xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl uppercase gridular-spans leading-[0.8]">
+          N<span>om</span>i<span>nat</span>e a <span>S</span>i<span>t</span>e</h1>
+        
+        <button class="font-neue font-normal flex items-center gap-3 mt-7 sm:mt-10 w-fit">
+          <div class="pb-0.5 font-mono font-normal uppercase text-sm">Let's go</div>
+          <div class="px-2 bg-ren-orange rounded-sm"><i class="ri-arrow-right-up-line"></i></div>
+        </button>
+      </div>
+  
+      <div class="w-full sm:w-[40%]">
+        <img class="size-full" src="assets/images/nominate.png">
+      </div>
+    </section>
+  
+    <section id="contact-section" class="bg-ren-black text-ren-white w-full px-4 md:px-8 py-6 md:py-10">
+      <div class="w-full flex justify-end">
+        <h3 class="font-[neue] text-right text-xl md:text-2xl lg:text-3xl xl:text-4xl uppercase gridular-spans">or Want a private <br>Project<span>?</span></h3>
+      </div>
+  
+      <div class="w-full flex justify-end sm:justify-between">
+        <p class="hidden sm:block w-[35%] mt-2 uppercase font-mono font-normal text-xs md:text-sm leading-[1.2]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Got a broken website or a bold idea? We might already have the fix — and if not, we’ll build one for you. Let’s connect.</p>
+  
+        <h1 class="font-[neue] text-5xl md:text-6xl lg:text-7xl xl:text-8xl uppercase gridular-spans leading-[0.8]">C<span>O</span>n<span>ta</span>ct
+          <span>Us</span></h1>
+      </div>
+  
+      <div class="flex flex-col gap-5 mt-10">
+        <div class="w-full flex justify-between gap-5">
+          <input class="w-1/2 py-4 px-3 font-[mono] uppercase bg-[#262626] rounded-sm border border-ren-white" type="text" placeholder="Name">
+          <input class="w-1/2 py-4 px-3 font-[mono] uppercase bg-[#262626] rounded-sm border border-ren-white" type="email" placeholder="Email">
+        </div>
+        <textarea class="w-full h-[18rem] py-4 px-3 font-[mono] uppercase bg-[#262626] rounded-sm border border-ren-white" id="message" placeholder="Message Us"></textarea>
+        <button class="w-full py-4 bg-ren-orange rounded-sm uppercase font-[mono] font-normal text-sm">
+          Let’s Talk
+        </button>
+      </div>
+    </section>
+  </main>
 
   <script type="module" src="js/main.js"></script>
 </body>
