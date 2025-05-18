@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
+import { handleSectionHeadingScrollAnimations } from "./handleSectionHeadingScrollAnimations.js";
 
 gsap.registerPlugin(SplitText);
 
@@ -49,6 +50,9 @@ export function preloader() {
         display: "none",
     }, "<").to("main", {
         display: "block",
+        onComplete: () => {
+            handleSectionHeadingScrollAnimations();
+        }
     }, "<").to("main", {
         opacity: 1,
         duration: 1,
